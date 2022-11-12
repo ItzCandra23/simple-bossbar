@@ -1,8 +1,7 @@
+import { CommandPermissionLevel } from "bdsx/bds/command";
 import { command } from "bdsx/command";
-import { events } from "bdsx/event";
 import { SimpleBossbarUI, SimpleBossbarUIAdmin } from "../ui";
 
-events.serverOpen.on(() => {
 command.register('bossbar', 'Show settings ui bossbar.')
 .overload((p, o) => {
     const entity = o.getEntity();
@@ -13,7 +12,7 @@ command.register('bossbar', 'Show settings ui bossbar.')
     SimpleBossbarUI(pl);
 }, {});
 
-command.register('bossbaradm', 'Edit SimpleBossbar config.')
+command.register('bossbaradm', 'Edit SimpleBossbar config.', CommandPermissionLevel.Operator)
 .overload((p, o) => {
     const entity = o.getEntity();
     if (entity === null) return;
@@ -22,4 +21,3 @@ command.register('bossbaradm', 'Edit SimpleBossbar config.')
 
     SimpleBossbarUIAdmin.menu(pl);
 }, {});
-});

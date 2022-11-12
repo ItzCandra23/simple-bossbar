@@ -1,6 +1,6 @@
 {
   "name": "@bdsx/simple-bossbar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This plugin making simple bossbar for BDSX.",
   "main": "index.js",
   "keywords": [
@@ -12,11 +12,6 @@
   "author": "itsrabbitboy",
   "license": "ISC",
   "bdsxPlugin": true,
-  "scripts": {
-    "build": "tsc",
-    "watch": "tsc -w",
-    "prepare": "tsc || exit 0"
-  },
   "devDependencies": {
     "bdsx": "file:../bdsx"
   }
