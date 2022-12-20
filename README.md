@@ -1,3 +1,5 @@
-# simple-bossbar 1.0.1
-* Fix bugs.
-* Fix command.
+# Simple-Bossbar
+A bossbar plugin for BDSX.
+# Commands
+* /bossbar - Show settings ui bossbar.
+* /bossbaradm - Edit SimpleBossbar config.

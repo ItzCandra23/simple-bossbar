@@ -2,7 +2,7 @@ import { CommandPermissionLevel } from "bdsx/bds/command";
 import { command } from "bdsx/command";
 import { SimpleBossbarUI, SimpleBossbarUIAdmin } from "../ui";
 
-command.register('bossbar', 'Show settings ui bossbar.')
+command.register('bossbar', 'Show settings ui for your bossbar.')
 .overload((p, o) => {
     const entity = o.getEntity();
     if (entity === null) return;

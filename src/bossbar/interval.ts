@@ -1,6 +1,16 @@
+import { NetworkIdentifier } from "bdsx/bds/networkidentifier";
 import { events } from "bdsx/event";
 import { BossbarTitle, SimpleBossBar } from ".";
-import { connectionList } from "../../../../example_and_test/net-login";
+
+const connectionList = new Map<NetworkIdentifier, string>();
+
+events.playerJoin.on((data) => {
+    connectionList.set(data.player.getNetworkIdentifier(), data.player.getNameTag());
+});
+
+events.playerLeft.on((data) => {
+    connectionList.delete(data.player.getNetworkIdentifier());
+});
 
 const bossbar = setInterval(() => {
     for (const ni of connectionList.keys()) {
