@@ -27,6 +27,10 @@ events.playerJoin.on((data) => {
     networks.set(data.player.getNetworkIdentifier(), data.player.getNameTag());
 });
 
+events.playerLeft.on((data) => {
+    networks.delete(data.player.getNetworkIdentifier());
+});
+
 events.serverStop.on(() => {
     clearInterval(bossbar);
 });

@@ -1,15 +1,10 @@
 {
   "name": "@bdsx/simple-bossbar",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "This plugin making simple bossbar for BDSX.",
   "main": "index.js",
-  "keywords": [
-    "BDSX",
-    "Plugin",
-    "bossbar",
-    "Simple-Bossbar"
-  ],
-  "author": "itsrabbitboy",
+  "keywords": [ "Simple-Bossbar", "BDSX" ],
+  "author": "ItzCandra23",
   "license": "ISC",
   "bdsxPlugin": true,
   "devDependencies": {
