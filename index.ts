@@ -21,6 +21,6 @@ export namespace send {
 }
 
 events.serverOpen.on(() => {
-    send.msg("Started!");
     require("./src");
+    send.msg("Started!");
 });
