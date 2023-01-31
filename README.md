@@ -4,4 +4,4 @@ A bossbar plugin for BDSX.
 * /bossbar - Show settings ui bossbar.
 * /bossbaradm - Edit SimpleBossbar config.
 
-Download in [Github](https://github.com/ItzCandra23) for stable version.
+Download on [Github](https://github.com/ItzCandra23) for stable version.
